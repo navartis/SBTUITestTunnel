@@ -24,8 +24,8 @@
 
 #import <XCTest/XCTest.h>
 #import "SBTUITestTunnelClient.h"
-#import "SBTUITestTunnel.h"
-#import "NSURLRequest+SBTUITestTunnelMatch.h"
+#import "SBTUITestTunnelCommon/SBTUITestTunnel.h"
+#import "SBTUITestTunnelCommon/NSURLRequest+SBTUITestTunnelMatch.h"
 #include <ifaddrs.h>
 #include <arpa/inet.h>
 
@@ -236,6 +236,18 @@ static NSTimeInterval SBTUITunneledApplicationDefaultTimeout = 30.0;
                                                      };
     
     return [self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandStubAndRemoveMatching params:params];
+}
+
+- (NSDictionary<SBTRequestMatch *, NSNumber *> *)unusedStubsPeekAll
+{
+    NSString *objectBase64 = [self sendSynchronousRequestWithPath:SBTUITunneledApplicationCommandUnusedStubsMatchesPeek params:nil];
+    if (objectBase64) {
+        NSData *objectData = [[NSData alloc] initWithBase64EncodedString:objectBase64 options:0];
+        
+        return [NSKeyedUnarchiver unarchiveObjectWithData:objectData] ?: @{};
+    }
+    
+    return nil;
 }
 
 #pragma mark - Stub Remove Commands

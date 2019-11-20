@@ -35,6 +35,7 @@
 		C3E3DFDC1D8BE45C003D6BB2 /* SBTNetworkTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3DFDB1D8BE45C003D6BB2 /* SBTNetworkTestViewController.swift */; };
 		C3E3DFE01D8ECA9A003D6BB2 /* MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3DFDF1D8ECA9A003D6BB2 /* MonitorTests.swift */; };
 		C3F6E9F11D63225F009D5733 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F6E9F01D63225F009D5733 /* Launch Screen.storyboard */; };
+		FC20176F2385369D00AAF648 /* UnusedStubsPeekAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC20176E2385369D00AAF648 /* UnusedStubsPeekAll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		C3F6E9F01D63225F009D5733 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D291A490DCA252056CC720C8 /* Pods-SBTUITestTunnel_Example-SBTUITestTunnel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBTUITestTunnel_Example-SBTUITestTunnel_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SBTUITestTunnel_Example-SBTUITestTunnel_Tests/Pods-SBTUITestTunnel_Example-SBTUITestTunnel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6A87F86CCE500F03DF809C9 /* SBTUITestTunnel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SBTUITestTunnel.podspec; path = ../SBTUITestTunnel.podspec; sourceTree = "<group>"; };
+		FC20176E2385369D00AAF648 /* UnusedStubsPeekAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnusedStubsPeekAll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +161,6 @@
 				8D7DC70B3E1E1BF669302146 /* Pods-SBTUITestTunnel_Example-SBTUITestTunnel_TestsNoSwizzling.debug.xcconfig */,
 				6B2E5E14339F7859EE2E968C /* Pods-SBTUITestTunnel_Example-SBTUITestTunnel_TestsNoSwizzling.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -255,6 +256,7 @@
 			children = (
 				C37C522D1E225A64005FC27D /* MatchRequestTests.swift */,
 				C3E3DFDF1D8ECA9A003D6BB2 /* MonitorTests.swift */,
+				FC20176E2385369D00AAF648 /* UnusedStubsPeekAll.swift */,
 				C3C9048F204938950096663F /* NetworkRequests.swift */,
 				C306920A204C9D5B00ACCCB0 /* RewriteTests.swift */,
 				C3E3DFD11D89FA75003D6BB2 /* UserDefaultsTests.swift */,
@@ -573,6 +575,7 @@
 				C3C90490204938950096663F /* NetworkRequests.swift in Sources */,
 				C30FD8E32029EED50054EA5C /* CookiesTest.swift in Sources */,
 				C306920B204C9D5B00ACCCB0 /* RewriteTests.swift in Sources */,
+				FC20176F2385369D00AAF648 /* UnusedStubsPeekAll.swift in Sources */,
 				C37C522E1E225A64005FC27D /* MatchRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
